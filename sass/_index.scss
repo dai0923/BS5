@@ -1,0 +1,316 @@
+$mediumGray:#636057 ;
+$darkGray: #494846;
+
+$font-xl: 32px;
+$font-s: 14px;
+
+$font-family-base: "NotoSansCJKtc-Regular";
+
+.navbar{
+    .logo{
+        width: 111px;
+        height: auto;
+    }
+    .navbar-nav .nav-link{
+        color: $mediumGray;
+    }
+}
+
+.btn{
+    color: $mediumGray;
+    margin: auto;
+    font-weight: bold;
+    width: 96px;
+}
+
+.btn-primary-hover:hover{
+    background-color: #FF785E;
+    color: #fff;
+}
+
+.btn-secondary-hover:hover{
+    background-color: #FFDF65;
+    color: #858377;
+    border: 0px;
+}
+
+section{
+    background-color: #F8F9FA;
+}
+
+.badge_dark{
+    background-color: #858377;
+}
+
+.h1_title{
+   color: $darkGray;
+   letter-spacing: 3px;
+}
+
+.product_img{
+    border-radius: 40px;
+}
+
+.pro_info{
+    .goal{
+        font-size: $font-s;
+        color: $mediumGray;
+        line-height: 25px;
+    }
+    .price{
+        font-size: $font-xl;
+        line-height: 56px;
+        color: $darkGray;
+    }
+    .progress-bar{
+        color: #858377 ;
+    }
+    .fundraising{
+        .title{
+            font-size: $font-s;
+            color: $mediumGray;
+        }
+        .num{
+            font-size: $font-xl;
+            color: $darkGray;
+            line-height: 59px;
+        }
+    }
+    .icon{
+        img{
+            width: 24px;
+        }
+        span{
+            color: $mediumGray;
+            font-size: 12px;
+        }
+    }
+    .fundraising_time{
+        background-color: #fff;
+        border-radius: 5px;
+        color: $mediumGray;
+    }
+    .sponsor_project{
+        font-size: 20px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    .track{
+        font-size: 20px;
+        width: 70%;
+        &:hover > i{
+            color: #FF785E;
+        }
+    }
+    .share{
+        font-size: 20px;
+        width: 30%;
+        &:hover > i{
+            color: #FF785E;
+        }
+    }
+}
+
+.scroll_nav{
+    background-color: #fff;
+    border-bottom: 1px solid #E8E8DB;
+    z-index: 9999;
+    overflow-y: hidden;
+    white-space: nowrap;
+    .nav-item{
+        a{
+            color: $mediumGray;
+            text-decoration: none;
+            padding: 20px 14px;
+            &.active{
+            border-bottom: 3px solid #FFDF65;
+            }
+        }
+    }
+}
+
+.advertising{
+    top: 90px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    height: 100vh;
+    .contact{
+        border: 1px solid #E5E5E5;
+        border-radius: 8px;
+        padding: 16px;
+        .community{
+            a{
+                width: 30px;
+                height: 30px;
+                background-color: #858377;
+                padding: 2px 0px;
+            }
+        }
+    }
+    .contact_img{
+        img{
+            border: 3px solid #FFDF65;
+            border-radius: 50px;
+        }
+    }
+    .contact_name{
+        .name{
+            color: $darkGray;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .sub{
+            color: #373A3C;
+        }
+    }
+    .contact_text{
+        color: #373A3C;
+        text-align: justify;
+    }
+    .contact_btn{
+        border: 1px solid #858377;
+        border-radius: 15px;
+        color: #858377;
+        font-size: 12px;
+        background-color: #fff;
+        padding: 0px 14px;
+        &:hover{
+            background-color: #FFDF65;
+            border: 0px;
+            > i{
+                color: #FF785E;
+            }
+        }
+    }
+}
+
+.program{
+    .pro_title{
+        background-color: #F8F9FA;
+        font-size: 20px;
+        color: $darkGray;
+        font-weight: bold;
+        text-align: center;
+        border-left: 5px solid #FFDF65;
+        border-right: 5px solid #FFDF65;
+        border-radius: 8px;
+        padding: 8px;
+    }
+    .pro_group{
+        border: 1px solid #E8E8DB;
+        border-radius: 8px;
+        .limited{
+            color: $mediumGray;
+            font-size: $font-s;
+            border-bottom: 1px solid #E8E8DB;
+        }
+        .pro_sub{
+            font-size: 18px;
+            font-weight: bold;
+            color: $darkGray;
+        }
+        .price{
+            font-size: 24px;
+            color: $darkGray;
+            font-weight: bold;
+        }
+        .description{
+            color: #858377;
+        }
+    }
+}
+
+.pro_label{
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 5px 5px 0px;
+    &.shallow_label{
+        background-color:#E8E8DB;
+        color: #858377;
+    }
+    &.dark_label{
+        background-color: #858377;
+        color: #fff;
+        .digital{
+            color: #FFDF65 ;
+        }
+    }
+}
+
+.modal{
+    .modal-content{
+        border-top: 4px solid #FFDF65;
+    }
+    .modal-title{
+        font-weight: bold;
+    }
+    label{
+        color: #373A3C;
+        font-family: $font-family-base;
+    }
+    select{
+        border: 0px;
+        background-color: #F7F7F7 ;
+        color: #999999;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right .75rem center;
+        background-size: 8px 10px;
+    }
+    input{
+        border: 0px;
+        background-color: #F7F7F7 ;
+        color: #999999;
+    }
+    .invalid-feedback{
+        color: #F48263;
+    }
+    .forgot{
+        text-decoration: none;
+        color: #858377;
+        font-size: $font-s;
+    }
+    .no_account{
+        color: #858377;
+        font-size: $font-s;
+        a{
+            color: #FF785E;
+            text-decoration: none;
+        }
+    }
+}
+
+footer{
+    background-color: $darkGray;
+    color: #fff;
+    p{
+        padding: 20px 10px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+}
+
+@media(max-width:767px){
+    .scroll_nav .nav-item a{
+        padding: 10px;
+    }
+    .pro_info .track,
+    .pro_info .share{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:576px){
+    .pro_info  .sponsor_project{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-radius: 0px;
+        z-index: 99999;
+        margin-bottom: 0px;
+    }
+}

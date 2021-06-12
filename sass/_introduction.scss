@@ -1,0 +1,53 @@
+.introduction{
+    .title{
+        color: $darkGray;
+        font-size: 24px;
+        letter-spacing: 1.92px;
+    }
+    .text{
+        text-align: justify;
+        line-height: 32px;
+        font-family: $font-family-base;
+    }
+    .form_title {
+        .text{
+            font-size: 24px;
+            color: $darkGray;
+        }
+    }
+    .form{
+        label{
+            color: #373A3C;
+            font-family: $font-family-base;
+        }
+        select{
+            border: 0px;
+            background-color: #F7F7F7 ;
+            color: #999999;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right .75rem center;
+            background-size: 8px 10px;
+        }
+        input{
+            border: 0px;
+            background-color: #F7F7F7 ;
+            color: #999999;
+        }
+        .invalid-feedback{
+            color: #F48263;
+        }
+        .submit_btn{
+           text-align: center;
+            button{
+                width: 176px;
+                font-size: 20px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.was-validated .form-control:invalid,.form-control.is-invalid{
+    background-image: none;
+}

@@ -1,0 +1,33 @@
+.message{
+    .message_title{
+        padding: 16px;
+        border-left: 4px solid #FFDF65;
+        border-radius: 4px;
+        .contact_proposer{
+            text-decoration: none;
+            color: #FF785E;
+        }
+    }
+    .message_content{
+        border: 1px solid #E5E5E5;
+        border-radius: 8px;
+        .message_name{
+            .name{
+                font-size: 20px;
+                color: $darkGray;
+            }
+            .time{
+                color: #858377;
+                letter-spacing: 2px;
+                font-size: $font-s;
+            }
+        }
+        .reply{
+            background-color: #F8F9FA;
+            padding: 16px;
+            .proposer_reply{
+                color: #FF785E;
+            }
+        } 
+    }
+}
